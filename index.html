@@ -1,32 +1,32 @@
 ---
 layout: default
 ---
-<header class="masthead">        
-  <h1 class="masthead-title">
-    <a href="{{ site.baseurl }}/">{{ site.name }}</a>
-  </h1>
-  <nav class="masthead-nav">
-    {% for nav in site.nav %}
-    <a href="{{ nav.href }}">{{ nav.name }}</a>
-    {% endfor %}
-  </nav>
-</header>
+
 <div class="content list">
 {% if site.posts.size == 0 %}
   <h2>No post found</h2>
 {% else %}
 {% endif %}
 {% for post in paginator.posts %}
-  <div class="list-item">
-    <h2 class="list-post-title">
-      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-    </h2>
-    <div class="list-post-date">
+  {% assign currentdate = post.date | date: "%Y" %}
+  {% if currentdate != date %}
+    {% unless forloop.first %}</div>{% endunless %}
+    <div id="y{{post.date | date: "%Y"}}" class="list-post-group">
+    <h1 class="list-post-group-title">{{currentdate}}</h1>
+    {% assign date = currentdate %}
+  {% endif %}
+  <div class="list-post-item">
+    <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+    <div class="list-post-item-date"><time>{{ post.date | date: "%d %b" }}</time></div>
+
+    <!--<div class="list-post-date">
       <time>{{ post.date | date_to_string }}</time>
-    </div>
-    <p class="desc"> {{ post.excerpt | strip_html | truncate: 100 }} </p>
+    </div>-->
+    <!--<p class="desc"> {{ post.excerpt | strip_html | truncate: 100 }} </p>-->
   </div>
 {% endfor %}
+{% if pagination %}
+
 <div class="pagination">
   {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path }}" class="previous">..</a>
@@ -39,4 +39,5 @@ layout: default
   {% else %}
     <span class="next "><a href="/">~</a> |</span>
   {% endif %}
+{% endif %}
 </div>

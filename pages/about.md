@@ -1,10 +1,11 @@
 ---
 title: About...
 permalink: /about/
-layout: default_post
+layout: page
 ---
 
 ## ..myself #
+&#9658;
 
 Hello there. How I’ve waited for you to come, Ive been here all alone. 
 Now that you've arrived. Please stay a while. And I promise I won't keep 

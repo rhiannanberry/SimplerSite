@@ -6,11 +6,28 @@
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}</title>
   <link href="/fonts.css" rel="stylesheet" charset="utf-8">
   <link rel="stylesheet" href="{{ site.baseurl }}/style.css">
-  {% seo %}
   </head>
 <body>
   <div class="container">
-    {{ content }}
+    <header class="masthead">
+        <h1 class="masthead-title">
+          <a href="{{ site.baseurl }}/">{{ site.name }}<br/>I S <div id="word2">O N L I N E</div></a>
+          <!--<a href="{{ site.baseurl }}/" id="word1">I S </a>-->
+        </h1>
+        <nav class="masthead-nav">
+          {% for nav in site.nav %}
+          {% if forloop.first != true %}_{% endif %}
+          <a href="{{ nav.href }}">{{ nav.name }}</a>
+          {% endfor %}
+        </nav>
+        <nav class="masthead-nav-icons">
+          {% for nav in site.nav-icons %}
+            <a title="{{ nav.desc }}" href="{{ nav.href }}"> {% include {{nav.icon}} %} </a>
+          {% endfor %}
+        </nav>
+    </header>
+    {{ content | replace: "µµ", "&emsp;"}}
   </div>
+  
 </body>
 </html>

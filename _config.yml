@@ -4,8 +4,8 @@
 # # # # # # # # # #
 
 # Basic
-name: "K i k o f r i"
-description: "dirty and malnourished jekyll theme"
+name: "R h i a n n a n"
+description: "Is online"
 
 # URL
 url: " "
@@ -20,12 +20,33 @@ nav:
  - name: "about"
    href: "/about"
 
- - name: "reference"
-   href: "/ref"
+ - name: "projects"
+   href: "/projects"
 
- - name: "contact"
-   href: "mailto:ivantheterrible@1530to1584.gov?You%20are%20ooold..."
+ - name: "Résumé"
+   href: "/resume"
 
+# Actually add refs to icons somehow
+nav-icons:
+ - name: "email"
+   desc: "Email me!"
+   href: "mailto:rhiannanb97@gmail.com"
+   icon: "icons/envelope.svg"
+ - name: "twitter"
+   desc: "RT all of my golden tweets"
+   href: "https://twitter.com/blood__mouth"
+   icon: "icons/twitter.svg"
+ - name: "github"
+   desc: "Judge my code"
+   href: "https://github.com/rhiannanberry"
+   icon: "icons/code.svg"
+ - name: "itch.io"
+   desc: "Play my games"
+   href: "idr"
+   icon: "icons/gamepad.svg"
+
+pagination: false
+  
 # Sass
 sass:
  style: :compressed
@@ -44,6 +65,12 @@ defaults:
   scope:
    path: ""
    type: "pages"
+  values:
+   layout: "page"
+ -
+  scope:
+   path: ""
+   type: "projects"
   values:
    layout: "page"
  -

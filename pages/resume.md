@@ -1,7 +1,7 @@
 ---
-title: References
-permalink: /ref/
-layout: default_post
+title: Résumé
+permalink: /resume/
+layout: page
 ---
 
 ## Important Stuff #

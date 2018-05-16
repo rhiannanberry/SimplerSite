@@ -6,14 +6,24 @@
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}</title>
   <link href="/fonts.css" rel="stylesheet" charset="utf-8">
   <link rel="stylesheet" href="{{ site.baseurl }}/style.css">
-  {% seo %}
+
   </head>
 <body>
+  
   <div class="container_post">
+    <header class="masthead">        
+        <h1 class="masthead-title">
+          <a href="{{ site.baseurl }}/">{{ site.name }}</a>
+        </h1>
+        <nav class="masthead-nav">
+          {% for nav in site.nav %}
+          <a href="{{ nav.href }}">{{ nav.name }}</a>
+          {% endfor %}
+        </nav>
+    </header>
+    
     {{ content | replace: "µµ", "&emsp;" }}
   </div>
-  <div class="footer">
-  |<a href="/"> ~ </a>|
- </div> 
+  
 </body>
 </html>

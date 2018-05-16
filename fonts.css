@@ -1,3 +1,74 @@
+
+
+
+
+@font-face {
+    font-family: 'nouveau_ibmmedium';
+    src: url('fonts/nouveau_ibm-webfont.woff2') format('woff2'),
+         url('fonts/nouveau_ibm-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'nouveau_ibm_stretchmedium';
+    src: url('fonts/nouveau_ibm_stretch-webfont.woff2') format('woff2'),
+         url('fonts/nouveau_ibm_stretch-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/* BEGIN SpaceMono Regular */
+@font-face {
+    font-family: 'SpaceMono';
+    src:local('SpaceMono'),
+        local('SpaceMono-Regular'),
+        local('SpaceMono Regular'), 
+        url('fonts/SpaceMono-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/* END SpaceMono Regular */
+
+/* BEGIN SpaceMono Bold */
+@font-face {
+    font-family: 'SpaceMono';
+    src:local('SpaceMono Bold'),
+        local('SpaceMono-Bold'),
+        url('fonts/SpaceMono-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+/* END SpaceMono Bold */
+
+/* BEGIN SpaceMono Italic */
+@font-face {
+    font-family: 'SpaceMono';
+    src:local('SpaceMono Italic'),
+        local('SpaceMono-Italic'),
+        url('fonts/SpaceMono-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+/* END SpaceMono Italic */
+
+/* BEGIN SpaceMono Bold Italic */
+@font-face {
+    font-family: 'SpaceMono';
+    src:local('SpaceMono Bold Italic'),
+        local('SpaceMono-Bold-Italic'),
+        url('fonts/SpaceMono-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+/* END SpaceMono Bold Italic */
+
 /* Ubuntu Font Family | origin: https://github.com/earaujoassis/ubuntu-fontface */
 
 /* BEGIN Ubuntu Light */
@@ -98,4 +169,3 @@
     font-style: italic;
 }
 /* END Ubuntu Bold Italic */
-
