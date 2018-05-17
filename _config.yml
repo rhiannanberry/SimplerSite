@@ -50,6 +50,7 @@ pagination: false
 # Sass
 sass:
  style: :compressed
+ mixins: :compressed
 
 # Excerpt
 excerpt_separator: <!-ex->

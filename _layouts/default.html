@@ -15,10 +15,23 @@
           <!--<a href="{{ site.baseurl }}/" id="word1">I S </a>-->
         </h1>
         <nav class="masthead-nav">
+          <ul>
           {% for nav in site.nav %}
+          
           {% if forloop.first != true %}_{% endif %}
+          <li>
           <a href="{{ nav.href }}">{{ nav.name }}</a>
+          {% if nav.name == "projects" %}
+            <ul class="dropdown">
+              <li><a href="/projects/long-eyes">Long Eyes</a></li>
+              <li><a href="/projects/clean-my-desk">Clean My Desk</a></li>
+              <li><a href="/projects/snake-a-thon">snake-a-thon</a></li>
+              <li><a href="/projects/analog-dreams">Analog Dreams</a></li>
+            </ul>
+          {% endif %}
+          </li>
           {% endfor %}
+          </ul>
         </nav>
         <nav class="masthead-nav-icons">
           {% for nav in site.nav-icons %}
