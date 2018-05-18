@@ -1,0 +1,16 @@
+.project {
+    .page-title {
+        margin-bottom: 0;
+        border-width: 0;
+    }
+    .project-list-inline {
+        width: fit-content;
+        font-family: $secondary-font;
+        font-size: 14px;
+        //margin: 5px 0px;
+        border-color: $primary;
+        border-width: 1px 0px;
+        border-style: dashed;
+        padding: 3px 0px;
+    }
+}

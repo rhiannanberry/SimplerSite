@@ -34,7 +34,7 @@ nav-icons:
    icon: "icons/envelope.svg"
  - name: "twitter"
    desc: "RT all of my golden tweets"
-   href: "https://twitter.com/blood__mouth"
+   href: "https://twitter.com/blood_mouth"
    icon: "icons/twitter.svg"
  - name: "github"
    desc: "Judge my code"
