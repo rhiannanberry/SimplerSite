@@ -3,12 +3,32 @@ title: Résumé
 permalink: /resume/
 layout: page
 ---
+# Rhiannan Berry #
+[rhiannanb97@gmail.com](mailto:rhiannanb97@gmail.com) 
+(678) 467-2432 
+Atlanta, GA
 
-## Important Stuff #
+---
 
-I must explain that thing that I wrote about that other thing in one of those blog entries I tend to write...
+## Education #
+**Georgia Institute of Technology**  
+*BS in Computer Science, 2019*
 
-## Work Stuff #
+---
+
+## Skills #
+**Languages/Frameworks:**
+ Golang, C#, PHP, Java, Python, C  
+**Software:**
+ Blender, Unity, GameMaker, Adobe Creative Suite, 3DSMax, Lens Studio, Android Studio
+
+---
+
+## Employment #
+
+---
+
+## Projects
 
 These people will tell you that they paid me to do something:
 1. [Evil Corporation](mailto:evilcorp@evilcorp.com)

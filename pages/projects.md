@@ -1,33 +1,45 @@
 ---
 title: Projects
 permalink: /projects/
-layout: page
+layout: project_page
 ---
+<style>
+.groups {
+    display: flex;
+    flex-wrap: wrap;
 
-[Long Eyes](\projects\long-eyes) \~ [Clean My Desk](#clean-my-desk) \~ [Rat App](#rat-app) \~ [Snake-A-Thon](#snake-a-thon) \~ [Analog Dreams](#analog-dreams)
+}
+.category-group {
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.inner {
+    min-width: fit-content;
+}
+</style>
+<div class="groups">
+<div class="category-group">
+<h3>Games</h3>
+<div class="inner">
+<a href="/projects/clean-my-desk">🗑️Clean My Desk</a><br>
+<a href="/projects/snake-a-thon">🐍snake-a-thon</a><br>
+<a href="/projects/analog-dreams">📼Analog Dreams</a>
+</div>
+</div>
 
-{% for project in projects %}
-{{project}}
-{% endfor %}
+<div class="category-group">
+<h3>Not Games</h3>
+<div class="inner">
+<a href="/projects/long-eyes">👀Long Eyes</a>
+</div>
+</div>
 
-### Long Eyes #
-*Snapchat/Lens Studio*
-
-![alt text]({{"/images/snapcode_longeyes.png" | absolute_url}}){: style="width:100px; height:100px; display:inline-block;"}
-
-First little test of Lens Studio. Verdict: stupidly easy.
-
-### Clean My Desk #
-*Unity3D*
-
-
-### Rat App #
-*Unity3D*
-
-### snake-a-thon #
-*GameMaker*
-
-### Analog Dreams #
-*Unity3D*
-
-First VG-Dev game co-lead with Sean Flanagan.
+<div class="category-group">
+<h3>A Little Bit of Both</h3>
+<div class="inner">
+<a href="/projects/misc#rat-app">🐀Rat App</a><br>
+<a href="/projects/misc#squid-racers">🦑Squid Racers</a>
+</div>
+</div>
+</div>
