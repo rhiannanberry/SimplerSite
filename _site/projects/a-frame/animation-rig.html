@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" charset="utf-8" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <style>
+            div {width:99%; z-index: 99 !important;position: absolute;color: white; padding: .5%; line-height: .5em; text-align: center;}
+            a:link,a:visited {color: white;}
+            a:hover,a:active {color: magenta;}
+            #back {z-index: 200 !important;position: absolute; margin: 10px; line-height: .5em; }
+        </style>
+            
+    </head>
+    <body>
+        <a id="back"  href="/projects/a-frame/"><< back</a>
+        <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+<script src="/experiments/libs/inflate.min.js"></script>
+<script src="https://rawgit.com/rhiannanberry/aframe-extras/master/dist/aframe-extras.js"></script>
+<script src="/experiments/js/animation-rig.js"></script>
+<script src="/experiments/js/animation-rig/main.js"></script> 
+
+  <div id="details">
+    <a style="font-size: .8em;" href="https://github.com/rhiannanberry/A-Frame-Experiments/tree/master/experiments/animation-rig">~:code:~</a>
+    <p>Press 1 for idle, 2 for dance.</p>
+  </div>
+  <a-scene>
+    <a-assets>
+  <img id="sky" src="/experiments/tex/space.jpg">
+  <img id="grid" src="/experiments/tex/gridPattern.png" >
+  <img id="pink" src="/experiments/tex/pink.jpg"> 
+  <img id="chrome" src="/experiments/tex/chrome.jpg"> 
+  </a-assets>
+
+      
+  <a-entity id="test"
+              cursor-listener
+              scale="1 1 1"
+              position="0 1 -2.5"
+              rotation="0 0 0"
+              animation-rig
+              rig-control
+              fbx-model="src: url(/experiments/models/fbx/samba mesh.fbx);"
+              
+  ></a-entity>
+  
+<a-camera position="0 2 4">
+  <a-entity 
+          raycaster="objects: .clickable"
+          cursor="fuse: true; fuseTimeout: 500"
+          position="0 0 -1"
+          geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
+          material="color: green; shader: flat">
+<a-animation begin="click" easing="ease-in" attribute="scale"
+              fill="backwards" from="0.1 0.1 0.1" to="1 1 1"></a-animation>
+<a-animation begin="cursor-fusing" easing="ease-in" attribute="scale"
+              fill="forwards" from="1 1 1" to="0.1 0.1 0.1"></a-animation>
+</a-entity>
+    
+</a-camera>
+        
+  
+      
+  <a-sky src="#sky" rotation="0 -90 0"></a-sky>
+      
+      <a-entity
+      geometry="primitive: plane; width: 10000; height: 10000;" rotation="-90 0 0"
+      material="src: #grid; repeat: 10000 10000; transparent: true;metalness:0.6; roughness: 0.4; sphericalEnvMap: #sky;"></a-entity>
+      
+    <a-entity light="color: #ccccff; intensity: 1; type: ambient;" visible=""></a-entity>
+    <a-entity light="color: #ffaaff; intensity: 1.5" position="5 5 5"></a-entity>
+    <a-entity light="color: #8498b2; intensity: 0.5" position="-5 5 15"></a-entity>
+    <a-entity light="color: white; type: ambient;"></a-entity>
+
+  
+    </a-scene>
+
+
+    </body>
+</html>
