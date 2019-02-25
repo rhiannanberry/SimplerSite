@@ -23,8 +23,8 @@ nav:
  - name: "projects"
    href: "/projects"
 
- - name: "Résumé"
-   href: "/resume"
+# - name: "Résumé" PUT BACK LATER
+#   href: "/resume"
 
 # Actually add refs to icons somehow
 nav-icons:
@@ -40,9 +40,9 @@ nav-icons:
    desc: "Judge my code"
    href: "https://github.com/rhiannanberry"
    icon: "icons/code.svg"
- - name: "itch.io"
+ - name: "VGDev"
    desc: "Play my games"
-   href: "idr"
+   href: "http://vgdev.gtorg.gatech.edu/profile/Rberry/"
    icon: "icons/gamepad.svg"
 
 pagination: false

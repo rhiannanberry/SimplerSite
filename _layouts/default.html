@@ -35,11 +35,13 @@
           {% endfor %}
           </ul>
         </nav>
-        <nav class="masthead-nav-icons">
+        <nav class="masthead-nav-icons" style="margin-bottom:15px">
           {% for nav in site.nav-icons %}
             <a title="{{ nav.desc }}" href="{{ nav.href }}"> {% include {{nav.icon}} %} </a>
           {% endfor %}
         </nav>
+        
+        <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', 'teal', 'T6T8ORLE');kofiwidget2.draw();</script> 
     </header>
     {{ content | replace: "µµ", "&emsp;"}}
   </div>

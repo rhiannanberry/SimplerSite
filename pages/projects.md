@@ -32,7 +32,7 @@ layout: project_page
 <h3>Not Games</h3>
 <div class="inner">
 <a href="/projects/long-eyes">👀Long Eyes</a>
-<a href="/projects/A-frame">🕶️A-frame Experiments</a>
+<a href="/projects/a-frame">🕶️A-frame Experiments</a>
 </div>
 </div>
 
